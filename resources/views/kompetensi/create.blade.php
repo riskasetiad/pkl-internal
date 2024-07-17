@@ -14,13 +14,13 @@
                             <div class="row mb-3">
                                 <label class="col-sm-2 col-form-label" for="basic-default-name">Kompetensi</label>
                                 <div class="col-sm-10">
-                                    <input type="text" class="form-control" id="basic-default-name" @error('kompetensi') is-invalid @enderror" name="kompetensi" required>
+                                    <input type="text" class="form-control @error('kompetensi') is-invalid @enderror" id="basic-default-name" name="kompetensi" required>
+                                    @error('kompetensi')
+                                        <span class="invalid-feedback" role="alert">
+                                            <strong>{{$message}}</strong>
+                                        </span>
+                                    @enderror
                                 </div>
-                                @error('kompetensi')
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{$message}}</strong>
-                                    </span>
-                                @enderror
                             </div>
                             <div class="row justify-content-end">
                                 <div class="col-sm-10">

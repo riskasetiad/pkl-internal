@@ -25,7 +25,7 @@
                             <td>{{ $data->mapel->nama_pelajaran }}</td>
                             <td>
                                 <img src="{{ asset('images/foto/' . $data->foto) }}" alt="Avatar" class="rounded-circle"
-                                    style="width: 100px;" height="100px;">
+                                    style="width: 100px;" height="150px;">
                             </td>
                             <td>
                                 <form action="{{ route('guru.destroy', $data->id) }}" method="POST">
@@ -41,7 +41,8 @@
                                                     class="bx bx-show-alt me-1"></i>Lihat</a>
                                             <a class="dropdown-item" href="{{ route('guru.edit', $data->id) }}"><i
                                                     class="bx bx-edit-alt me-1"></i>Edit</a>
-                                            <a type="submit" class="dropdown-item" href="{{ route('guru.destroy', $data->id) }}" data-confirm-delete="true"><i
+                                            <a type="submit" class="dropdown-item"
+                                                href="{{ route('guru.destroy', $data->id) }}" data-confirm-delete="true"><i
                                                     class="bx bx-trash me-1"></i>Hapus</a>
                                         </div>
                                     </div>

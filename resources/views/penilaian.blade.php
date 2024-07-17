@@ -15,30 +15,30 @@
                         @endif
 
                         @if (Auth::user()->is_admin == 'admin')
-                            <div class="row col-5">
+                            <div class="row col-12">
                                 @foreach ($nilai as $data)
-                                    <p class="fw-bold text-center mt-3">{{ $data->pertanyaan }}</p>
+                                    <p class="fw-bold text mt-3">{{ $data->pertanyaan }}</p>
                                     <form class="px-4" action="">
                                         <p class="fw-bold"></p>
                                         <div class="form-check mb-2">
                                             <input class="form-check-input" type="radio" name="exampleForm"
                                                 id="radioExample1" />
                                             <label class="form-check-label" for="radioExample1">
-                                                Option 1
+                                                Terpenuhi
                                             </label>
                                         </div>
                                         <div class="form-check mb-2">
                                             <input class="form-check-input" type="radio" name="exampleForm"
                                                 id="radioExample2" />
                                             <label class="form-check-label" for="radioExample2">
-                                                Option 2
+                                                Sebagian Terpenuhi
                                             </label>
                                         </div>
                                         <div class="form-check mb-2">
                                             <input class="form-check-input" type="radio" name="exampleForm"
                                                 id="radioExample3" />
                                             <label class="form-check-label" for="radioExample3">
-                                                Option 3
+                                                Tidak Terpenuhi
                                             </label>
                                         </div>
 

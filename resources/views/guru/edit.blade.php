@@ -39,7 +39,7 @@
                             <div class="col-sm-10">
                                 <select id="defaultSelect" class="form-select" @error('jenis_kelamin') is-invalid @enderror" name="jenis_kelamin" value="{{ $guru->jenis_kelamin }}">
                                     <option value="{{$guru->id}}" {{ $guru->id == $guru->jenis_kelamin ? 'selected' : '' }}>{{$guru->jenis_kelamin}}</option>
-                                    <option value="Laki-laki">laki-laki</option>
+                                    <option value="Laki-laki">Laki-laki</option>
                                     <option value="Perempuan">Perempuan</option>
                                 </select>
                                 @error('jenis_kelamin')

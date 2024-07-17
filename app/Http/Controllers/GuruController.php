@@ -52,7 +52,7 @@ class GuruController extends Controller
             'tanggal_lahir' => 'required',
             'id_mapel' => 'required',
             'mengajar_sejak' => 'required',
-            'foto' => 'required|max:2048|mimes:png,jpg',
+            'foto' => 'required|max:5400|mimes:png,jpg',
         ]);
 
         $guru = new Guru();

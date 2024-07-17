@@ -5,7 +5,7 @@
             <script>
                 document.write(new Date().getFullYear());
             </script>
-            , P-PI-PKG-PHR.
+            , P-PI-PKG-24.
         </div>
     </div>
 </footer>
